@@ -21,11 +21,12 @@ agent any
             }
         }
   
-    stage('Cloning Git') {
-      steps {
-        git 'https://github.com/smartlizzard/SmartBank.git'
-      }
-    }
+    stage('Cloning BuildCode') {
+          steps {
+                git branch: 'k8s-dev',
+                url: https://github.com/smartlizzard/Eureka-Discovery-service.git
+            }
+        }
     
     stage('Maven Build') {
       steps{
