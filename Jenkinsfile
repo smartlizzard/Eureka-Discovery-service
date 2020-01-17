@@ -24,7 +24,7 @@ agent any
     stage('Cloning BuildCode') {
           steps {
                 git branch: 'k8s-dev',
-                url: https://github.com/smartlizzard/Eureka-Discovery-service.git
+                url: "https://github.com/smartlizzard/Eureka-Discovery-service.git"
             }
         }
     
